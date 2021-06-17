@@ -15,16 +15,16 @@ from botocore.exceptions import NoCredentialsError
 from werkzeug.utils import secure_filename
 import face_recognition_train
 
-AWS_ACCESS_KEY_ID = "AKIAZDET2MTHTCIVUF2R"
-AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID = "AWS_ACCESS_KEY_ID"
+AWS_SECRET_ACCESS_KEY = "AWS_SECRET_ACCESS_KEY"
 AWS_DEFAULT_REGION = "ap-northeast-2"
 
 client_s3 = boto3.client('s3', aws_access_key_id=AWS_ACCESS_KEY_ID,
                          aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
                          region_name=AWS_DEFAULT_REGION)
 
-AWS_ACCESS_KEY_ID_REK = "AKIAZDET2MTHQUAZ3XNJ"
-AWS_SECRET_ACCESS_KEY_REK = "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"
+AWS_ACCESS_KEY_ID_REK = "AWS_ACCESS_KEY_ID_REK"
+AWS_SECRET_ACCESS_KEY_REK = "AWS_SECRET_ACCESS_KEY_REK"
 AWS_DEFAULT_REGION_REK = "ap-northeast-2"
 
 client_rekognition = boto3.client('rekognition', aws_access_key_id=AWS_ACCESS_KEY_ID_REK,
